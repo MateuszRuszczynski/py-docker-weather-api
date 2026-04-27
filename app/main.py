@@ -10,7 +10,7 @@ def get_weather() -> dict:
         params={"key": API_KEY, "q": "Paris"},
     )
     data = response.json()
-
+    
     location = data["location"]
     current = data["current"]
     condition = data["current"]["condition"]
